@@ -2,7 +2,7 @@ import http from 'http';
 import mongoose from 'mongoose';
 import app from './app';
 import { config } from './config/config';
-import Logging from './library/Logging';
+import Logging from '@library/Logging';
 
 function startServer() {
   Logging.info('Connected to mongoDB');

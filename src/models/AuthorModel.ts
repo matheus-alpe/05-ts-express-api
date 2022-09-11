@@ -2,7 +2,6 @@ import mongoose, { Document, Schema } from 'mongoose';
 
 export interface IAuthor {
   name: string;
-  age: number;
 }
 
 export interface IAuthorModel extends IAuthor, Document {}

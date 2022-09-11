@@ -10,6 +10,8 @@
     "baseUrl": ".",
     "paths": {
       "@controllers/*": ["src/controllers/*"],
+      "@library/*": ["src/library/*"],
+      "@middlewares": ["src/middlewares/index.ts"],
       "@models/*": ["src/models/*"],
     }
   },
