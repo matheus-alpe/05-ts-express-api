@@ -12,5 +12,12 @@
     "created": "2022-09-11T15:36:34.439Z",
     "sortNum": 20000,
     "folders": []
+  },
+  {
+    "_id": "12bddddc-d103-4e11-9a1e-83acfb50ac10",
+    "colName": "Book",
+    "created": "2022-09-11T19:06:25.668Z",
+    "sortNum": 30000,
+    "folders": []
   }
 ]

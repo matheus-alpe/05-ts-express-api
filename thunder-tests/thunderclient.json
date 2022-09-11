@@ -106,5 +106,85 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "95b3736c-17ba-43aa-b580-12fe88c77276",
+    "colId": "12bddddc-d103-4e11-9a1e-83acfb50ac10",
+    "containerId": "",
+    "name": "Create",
+    "url": "{{host}}/books",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-09-11T19:06:25.671Z",
+    "modified": "2022-09-11T19:15:42.617Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Lord of the Rings\",\n  \"author\": \"{{authorId}}\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a3be73cc-6c5a-41f1-a60d-c71303290732",
+    "colId": "12bddddc-d103-4e11-9a1e-83acfb50ac10",
+    "containerId": "",
+    "name": "Read All",
+    "url": "{{host}}/books",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-09-11T19:06:25.680Z",
+    "modified": "2022-09-11T19:06:50.638Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4e542fd8-5206-4a0e-98f1-7d96c84f8278",
+    "colId": "12bddddc-d103-4e11-9a1e-83acfb50ac10",
+    "containerId": "",
+    "name": "Read",
+    "url": "{{host}}/books/{{bookId}}",
+    "method": "GET",
+    "sortNum": 25000,
+    "created": "2022-09-11T19:06:25.681Z",
+    "modified": "2022-09-11T21:01:47.456Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4e551954-b3a5-4380-86a7-3adeb564a67c",
+    "colId": "12bddddc-d103-4e11-9a1e-83acfb50ac10",
+    "containerId": "",
+    "name": "Update",
+    "url": "{{host}}/books/{{bookId}}",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2022-09-11T19:06:25.682Z",
+    "modified": "2022-09-11T21:02:14.117Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Lord of the Rings: I\",\n  \"author\": \"{{authorId}}\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f7951843-c1f7-4e25-b8eb-a84cf25f51f5",
+    "colId": "12bddddc-d103-4e11-9a1e-83acfb50ac10",
+    "containerId": "",
+    "name": "Delete",
+    "url": "{{host}}/books/{{bookId}}",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2022-09-11T19:06:25.683Z",
+    "modified": "2022-09-11T21:02:42.713Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]

@@ -1,7 +1,6 @@
 import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
-import Logging from '@library/Logging';
 import { ErrorMiddleware, LoggerMiddleware } from '@middlewares';
 import apiRoutes from './routes';
 
