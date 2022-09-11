@@ -2,6 +2,7 @@ import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import Logging from './library/Logging';
+import apiRoutes from './routes';
 
 const app = express();
 
@@ -22,6 +23,8 @@ app.use((req, res, next) => {
 });
 
 app.get('/ping', (req, res) => res.status(200).json({ message: 'pong' }));
+
+app.use(apiRoutes);
 
 app.use((req, res, next) => {
   const error = new Error('Not found');
