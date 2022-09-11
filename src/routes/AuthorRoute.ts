@@ -7,6 +7,6 @@ routes.post('/', AuthorController.create);
 routes.get('/', AuthorController.readAll);
 routes.get('/:authorId', AuthorController.read);
 routes.put('/:authorId', AuthorController.update);
-routes.delete('/', AuthorController.delete);
+routes.delete('/:authorId', AuthorController.delete);
 
 export default routes;

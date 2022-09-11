@@ -42,6 +42,7 @@ class AuthorController {
   ) {
     try {
       const { authorId } = req.params;
+
       const author = await AuthorModel.findById(authorId);
 
       if (!author) {
@@ -65,11 +66,12 @@ class AuthorController {
   ) {
     try {
       const { authorId } = req.params;
+
       const { name } = req.body;
 
       if (!name) {
         return res.status(422).json({
-          message: `🤔 - Invalid body`
+          message: '❌ - Invalid body'
         });
       }
 
@@ -93,10 +95,20 @@ class AuthorController {
     }
   }
 
-  public async delete(req: Request, res: Response) {
-    return res.json({
-      message: 'TODO: Implement DELETE'
-    });
+  public async delete(
+    req: Request<IAuthorId>,
+    res: Response,
+    next: NextFunction
+  ) {
+    try {
+      const { authorId } = req.params;
+
+      await AuthorModel.findByIdAndDelete(authorId);
+
+      return res.status(204).end();
+    } catch (error) {
+      next(error);
+    }
   }
 }
 

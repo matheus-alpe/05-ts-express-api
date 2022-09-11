@@ -69,7 +69,7 @@
     "method": "PUT",
     "sortNum": 30000,
     "created": "2022-09-11T15:45:58.223Z",
-    "modified": "2022-09-11T18:28:33.692Z",
+    "modified": "2022-09-11T18:35:21.341Z",
     "headers": [],
     "params": [],
     "body": {
@@ -84,11 +84,11 @@
     "colId": "5b488e41-e7c4-40b9-9f61-714ce28f165b",
     "containerId": "",
     "name": "Delete",
-    "url": "{{host}}/authors",
+    "url": "{{host}}/authors/{{authorId}}",
     "method": "DELETE",
     "sortNum": 40000,
     "created": "2022-09-11T15:46:21.096Z",
-    "modified": "2022-09-11T15:46:29.969Z",
+    "modified": "2022-09-11T18:38:27.769Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -102,7 +102,7 @@
     "method": "GET",
     "sortNum": 25000,
     "created": "2022-09-11T18:10:43.436Z",
-    "modified": "2022-09-11T18:13:04.585Z",
+    "modified": "2022-09-11T18:30:51.790Z",
     "headers": [],
     "params": [],
     "tests": []
