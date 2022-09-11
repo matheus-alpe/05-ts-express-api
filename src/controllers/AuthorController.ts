@@ -66,7 +66,6 @@ class AuthorController {
   ) {
     try {
       const { authorId } = req.params;
-
       const { name } = req.body;
 
       if (!name) {

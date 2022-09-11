@@ -62,7 +62,6 @@ class BookController {
   ) {
     try {
       const { bookId } = req.params;
-
       const { title, author } = req.body;
 
       if (!title || !author) {
