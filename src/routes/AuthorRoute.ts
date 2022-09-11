@@ -4,7 +4,8 @@ import AuthorController from '@controllers/AuthorController';
 const routes = Router();
 
 routes.post('/', AuthorController.create);
-routes.get('/', AuthorController.read);
+routes.get('/', AuthorController.readAll);
+routes.get('/:authorId', AuthorController.read);
 routes.put('/', AuthorController.update);
 routes.delete('/', AuthorController.delete);
 

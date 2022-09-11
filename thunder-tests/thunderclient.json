@@ -36,12 +36,12 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2022-09-11T15:36:45.204Z",
-    "modified": "2022-09-11T17:40:23.123Z",
+    "modified": "2022-09-11T17:43:25.348Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"\"\n}",
+      "raw": "{\n  \"name\": \"Matheus\"\n}",
       "form": []
     },
     "tests": []
@@ -50,12 +50,12 @@
     "_id": "dc460f5c-62cf-443a-a60c-bcc847fa5b78",
     "colId": "5b488e41-e7c4-40b9-9f61-714ce28f165b",
     "containerId": "",
-    "name": "Read",
+    "name": "Read All",
     "url": "{{host}}/authors",
     "method": "GET",
     "sortNum": 20000,
     "created": "2022-09-11T15:45:27.935Z",
-    "modified": "2022-09-11T15:45:46.205Z",
+    "modified": "2022-09-11T18:11:07.990Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -84,6 +84,20 @@
     "sortNum": 40000,
     "created": "2022-09-11T15:46:21.096Z",
     "modified": "2022-09-11T15:46:29.969Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4f708959-e000-4478-b2a4-ffd05ccfe56b",
+    "colId": "5b488e41-e7c4-40b9-9f61-714ce28f165b",
+    "containerId": "",
+    "name": "Read",
+    "url": "{{host}}/authors/631e1edc95c5652609bc9729",
+    "method": "GET",
+    "sortNum": 25000,
+    "created": "2022-09-11T18:10:43.436Z",
+    "modified": "2022-09-11T18:10:43.436Z",
     "headers": [],
     "params": [],
     "tests": []
