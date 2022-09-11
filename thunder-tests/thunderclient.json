@@ -65,13 +65,18 @@
     "colId": "5b488e41-e7c4-40b9-9f61-714ce28f165b",
     "containerId": "",
     "name": "Update",
-    "url": "{{host}}/authors",
+    "url": "{{host}}/authors/{{authorId}}",
     "method": "PUT",
     "sortNum": 30000,
     "created": "2022-09-11T15:45:58.223Z",
-    "modified": "2022-09-11T15:46:07.557Z",
+    "modified": "2022-09-11T18:28:33.692Z",
     "headers": [],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Matheus Alves\"\n}",
+      "form": []
+    },
     "tests": []
   },
   {
@@ -93,11 +98,11 @@
     "colId": "5b488e41-e7c4-40b9-9f61-714ce28f165b",
     "containerId": "",
     "name": "Read",
-    "url": "{{host}}/authors/631e1edc95c5652609bc9729",
+    "url": "{{host}}/authors/{{authorId}}",
     "method": "GET",
     "sortNum": 25000,
     "created": "2022-09-11T18:10:43.436Z",
-    "modified": "2022-09-11T18:10:43.436Z",
+    "modified": "2022-09-11T18:13:04.585Z",
     "headers": [],
     "params": [],
     "tests": []

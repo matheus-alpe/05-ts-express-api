@@ -1,6 +1,9 @@
 import { NextFunction, Request, Response } from 'express';
-import mongoose from 'mongoose';
 import AuthorModel, { IAuthor } from '@models/AuthorModel';
+
+interface IAuthorId {
+  authorId: string;
+}
 
 class AuthorController {
   public async create(
@@ -32,7 +35,11 @@ class AuthorController {
     }
   }
 
-  public async read(req: Request, res: Response, next: NextFunction) {
+  public async read(
+    req: Request<IAuthorId>,
+    res: Response,
+    next: NextFunction
+  ) {
     try {
       const { authorId } = req.params;
       const author = await AuthorModel.findById(authorId);
@@ -51,10 +58,39 @@ class AuthorController {
     }
   }
 
-  public async update(req: Request, res: Response) {
-    return res.json({
-      message: 'TODO: Implement UPDATE'
-    });
+  public async update(
+    req: Request<IAuthorId, {}, IAuthor>,
+    res: Response,
+    next: NextFunction
+  ) {
+    try {
+      const { authorId } = req.params;
+      const { name } = req.body;
+
+      if (!name) {
+        return res.status(422).json({
+          message: `🤔 - Invalid body`
+        });
+      }
+
+      const author = await AuthorModel.findByIdAndUpdate(
+        authorId,
+        { name },
+        { new: true }
+      );
+
+      if (!author) {
+        return res.status(404).json({
+          message: `🔍 - No Author with ID: ${authorId}`
+        });
+      }
+
+      return res.status(200).json({
+        author
+      });
+    } catch (error) {
+      next(error);
+    }
   }
 
   public async delete(req: Request, res: Response) {
